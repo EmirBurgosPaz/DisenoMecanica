@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C4381DD-ECB0-4FFE-BE22-150C9C92C34C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Programa_diseño_bandas</RootNamespace>
+    <AssemblyName>Programa_diseño_bandas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\NVIDIA\Desktop\ProgramaBandas\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>vbeltdrive.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0F44FE7CCAE419F1D1E981697F725D7B845929EE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Programa_diseño_bandas_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DiameterThreeV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiameterThreeV.Designer.cs">
+      <DependentUpon>DiameterThreeV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FactorCorrecionLongitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FactorCorrecionLongitud.Designer.cs">
+      <DependentUpon>FactorCorrecionLongitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodology.Designer.cs">
+      <DependentUpon>Metodology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerAdded5VCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerAdded5VCase.Designer.cs">
+      <DependentUpon>PowerAdded5VCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diameterFive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diameterFive.Designer.cs">
+      <DependentUpon>diameterFive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiameterEightV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiameterEightV.Designer.cs">
+      <DependentUpon>DiameterEightV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosBelt.cs" />
+    <Compile Include="Mainform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.cs">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FactorCorrecionTheta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FactorCorrecionTheta.Designer.cs">
+      <DependentUpon>FactorCorrecionTheta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablaServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablaServicios.Designer.cs">
+      <DependentUpon>TablaServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tiposBandas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tiposBandas.Designer.cs">
+      <DependentUpon>tiposBandas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DiameterEightV.resx">
+      <DependentUpon>DiameterEightV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiameterThreeV.resx">
+      <DependentUpon>DiameterThreeV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactorCorrecionLongitud.resx">
+      <DependentUpon>FactorCorrecionLongitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodology.resx">
+      <DependentUpon>Metodology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerAdded5VCase.resx">
+      <DependentUpon>PowerAdded5VCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diameterFive.resx">
+      <DependentUpon>diameterFive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FactorCorrecionTheta.resx">
+      <DependentUpon>FactorCorrecionTheta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablaServicios.resx">
+      <DependentUpon>TablaServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tiposBandas.resx">
+      <DependentUpon>tiposBandas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Programa_diseño_bandas_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\typeogfbelts.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\servideFactor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\diameter5v.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\AddedPower%25v.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\FactorCorrecionTheta.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\CorrciionLong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\diameter3v.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\diameter8}v.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vbeltdrive.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
